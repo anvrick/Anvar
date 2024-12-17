@@ -24,3 +24,10 @@ class Warrior():
             print('His armor: ', qoldi, 'and His health: ', opponent.health)
         elif qoldi <=0:
             print(opponent.health - self.power, '\n')
+
+warrior1 = Warrior('P.E.K.K.A', 5000, 5000, 'sword', 2000)
+warrior2 = Warrior('Golem', 6000, 6000, 'hands', 1000)
+warrior1.show()
+warrior2.show()
+warrior1.fight(warrior2)
+warrior2.fight(warrior1)
